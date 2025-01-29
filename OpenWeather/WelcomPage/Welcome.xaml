@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OpenWeather.WelcomPage.Welcome"
+             Title="Welcome">
+
+    <!-- Gradient background color -->
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="#b5179e" Offset="0.0" />
+            <GradientStop Color="#7209b7" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <!-- Content Layout -->
+    <StackLayout VerticalOptions="Center"
+                 Margin="20"
+                 Spacing="0">
+
+        <!-- Image -->
+        <Image 
+            Source="warm.png"
+            HeightRequest="200"
+            WidthRequest="200" />
+
+        <!-- Title Label -->
+        <Label 
+            Text="Weather"
+            TextColor="#240046"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <!-- Subtitle Label -->
+        <Label 
+            Text="Forecast App"
+            TextColor="#240046"
+            FontSize="28"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <!-- Description Label of my app -->
+        <Label 
+            Text=" 🌦️ Rain or Shine, I’ve Got You Covered!
+            It's the TempNet weather app.Where the sun meets the clouds, and every forecast tells a story. Whether it’s a chilly breeze or a summer heatwave, I bring the weather to you.🌦️"
+            TextColor="White"
+            FontSize="Small"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Margin="20" />
+
+        <!-- Get Started Button -->
+        <Button 
+            Text="Get Started"
+            BackgroundColor="#a663cc"
+            TextColor="#240046"
+            WidthRequest="200"
+            HeightRequest="50"
+            CornerRadius="25"
+            x:Name="btnGetStarted"
+            Clicked="btnGetStarted_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
